@@ -2,6 +2,8 @@
 
 Source code for the analysis of Selective Violence (VS) and Indiscriminate Violence (VI) in Colombia.
 
+![Status Badge](https://img.shields.io/badge/Status-In%20Development-yellow) ![License Badge](https://img.shields.io/badge/License-MIT-blue) ![Version Badge](https://img.shields.io/badge/Version-1.0.0-informational)
+
 ## Project Overview
 
 This project focuses on developing a robust analytical framework to study and quantify patterns of Selective Violence (Violencia Selectiva) and Indiscriminate Violence (Violencia Indiscriminada) across Colombia.
