@@ -91,28 +91,15 @@ Repo_Root/
     jupyter notebook
     ```
 
-## Metrics
-
-The project defines and calculates the following key metrics:
-
-* **Escalation:** Represents the change in the number of Cases or Victims compared to the count in the *immediately preceding month*.
-    $$ \text{Escalation}_t = \text{Count}_t - \text{Count}_{t-1} $$
-    *(Where $t$ is the current month and $t-1$ is the previous month)*
-
-* **Intensity:** Compares the current count of Cases or Victims to the *weighted average* of the count over the *last 3 years*. The weighting could be uniform or favor more recent data, depending on implementation.
-    $$ \text{Intensity}_t = \text{Count}_t - \text{WeightedAvg}(\text{Count}_{t-36 \dots t-1}) $$
-    *(The exact weighting function for the average over the past 36 months (approx. 3 years) will be defined in the scripts).*
-
-These metrics are calculated for both Cases and Victims at the Country, Department, and Region levels.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to open issues or submit pull requests.
+...
 
-## License
+## References
 
-*(Optional: Add a license like MIT, Apache 2.0, etc. Here you would add a link to your LICENSE file.)*
+* **Paper:** "Quantifying Fairness in Spatial Predictive Policing" (Include link or full citation to the paper when available).
 
 ## Contact
 
-*(Optional: Add your contact information, e.g., email or GitHub profile link)*
+If you have questions, comments, or suggestions about this project or the paper, please contact:
