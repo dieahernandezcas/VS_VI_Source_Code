@@ -19,7 +19,8 @@ Using data on violent **Cases** (events with or without life-threatening effects
 
 The repository is organized as follows:
 
-
+```
+.
 Repo_Root/
 ├── data/               # All data files
 │   ├── raw/            # Original raw data files (DO NOT MODIFY)
@@ -35,6 +36,7 @@ Repo_Root/
 ├── .gitignore          # Specifies intentionally untracked files (e.g., large data files, env files)
 └── README.md           # This file
 
+```
 
 ## Setup and Installation
 
