@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Violencia Selectiva e Indiscriminada en Colombia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .top-bar {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+        }
+        .top-bar h1 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        /* Removed .image-container style */
+        .badges {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .badges img {
+            margin: 0 5px;
+        }
+        .repo-link-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .repo-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .repo-link:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        .justify-text {
+            text-align: justify;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #eee;
+        }
+        code {
+            font-family: monospace;
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .table-of-contents {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .table-of-contents ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .table-of-contents li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .table-of-contents li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* Removed video styles */
+        /* Removed figure item styles */
+
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <h1>Análisis de Violencia Selectiva e Indiscriminada en Colombia</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="badges">
+            <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status Badge">
+            <img src="https://img.shields.io/badge/License-MIT-blue" alt="License Badge">
+            <img src="https://img.shields.io/badge/Version-1.0.0-informational" alt="Version Badge">
+        </div>
+
+        <div class="repo-link-container">
+            <a href="https://github.com/YOUR_USERNAME/VS_VI_Source_Code" target="_blank" class="repo-link">
+                Ver Repositorio en GitHub
+            </a>
+        </div>
+
+        <div class="justify-text">
+            <p>Este proyecto se enfoca en el análisis cuantitativo de la Violencia Selectiva (VS) y la Violencia Indiscriminada (VI) en Colombia. Utilizando datos detallados sobre eventos violentos (Casos) y personas afectadas (Víctimas), buscamos comprender las dinámicas de la violencia a nivel nacional, departamental y regional.</p>
+            <p>El análisis incluye la limpieza y procesamiento de datos, y la determinación de métricas clave como la **Escalada** (comparación con el mes anterior) y la **Intensidad** (comparación con el promedio ponderado de los últimos 3 años) para Casos y Víctimas.</p>
+        </div>
+
+        <section id="about-the-project">
+            <h2>Sobre el Proyecto</h2>
+            <div class="justify-text">
+                <p>Este repositorio contiene el código fuente y los scripts utilizados para el análisis de la Violencia Selectiva (VS) y la Violencia Indiscriminada (VI) en Colombia. El objetivo es proporcionar herramientas para el procesamiento de datos y el cálculo de métricas que permitan monitorear y entender la evolución de estos tipos de violencia en diferentes niveles geográficos del país.</p>
+            </div>
+        </section>
+
+        <section id="project-structure">
+            <h2>Estructura del Proyecto</h2>
+            <p>El repositorio está organizado en las siguientes carpetas:</p>
+            <pre><code>.
+├── data/               # Archivos de datos
+│   ├── raw/            # Datos originales (NO MODIFICAR)
+│   └── processed/      # Datos limpios y preprocesados
+├── notebooks/          # Notebooks Jupyter para exploración y análisis
+├── scripts/            # Scripts reutilizables de Python
+│   ├── preprocessing/  # Scripts para limpieza y transformación inicial de datos
+│   ├── data_generation/ # Scripts para preparar datos para modelado (si aplica)
+│   └── modeling/       # Scripts para modelado (si aplica)
+│   └── utils/          # (Opcional) Funciones de ayuda
+├── results/            # Resultados de análisis y modelos
+├── images/             # Visualizaciones e imágenes
+├── .gitignore          # Archivos ignorados por Git
+└── README.md           # Descripción del proyecto
+</code></pre>
+            <p class="justify-text">Para una descripción más detallada de cada carpeta y su contenido, consulta el archivo README.md en la raíz del repositorio.</p>
+        </section>
+
+        <section id="installation">
+            <h2>Instalación</h2>
+            <p class="justify-text">Para configurar el proyecto localmente, asegúrate de tener Python 3.7+, pip y git instalados. Luego, clona el repositorio, crea un entorno virtual e instala las dependencias listadas en <code>requirements.txt</code>.</p>
+            <p class="justify-text">Consulta la sección de instalación en el README.md para instrucciones detalladas paso a paso.</p>
+        </section>
+
+        <section id="metrics">
+            <h2>Métricas Clave</h2>
+            <div class="justify-text">
+                <p>El proyecto calcula las siguientes métricas para Casos y Víctimas a nivel País, Departamento y Región:</p>
+                <ul>
+                    <li>**Escalada:** Cambio en el número de Casos o Víctimas respecto al mes inmediatamente anterior.</li>
+                    <li>**Intensidad:** Comparación del número actual de Casos o Víctimas con el promedio ponderado de los últimos 3 años.</li>
+                </ul>
+                <p>Las fórmulas exactas se detallan en el README.md.</p>
+            </div>
+        </section>
+
+
+        <section id="results">
+            <h2>Resultados</h2>
+            <div class="justify-text">
+                <p>Los resultados del procesamiento de datos y el cálculo de métricas se almacenan en la carpeta <code>results/</code>. Estos incluyen tablas resumen y, potencialmente, visualizaciones generadas por los scripts o notebooks.</p>
+                </div>
+        </section>
+
+        <section id="references">
+            <h2>Referencias</h2>
+            <ul>
+                <li>**Repositorio GitHub:** <a href="https://github.com/YOUR_USERNAME/VS_VI_Source_Code" target="_blank">VS_VI_Source_Code</a>.</li>
+                </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="justify-text">
+                <p>Para preguntas o colaboraciones, por favor abre un "Issue" en el repositorio de GitHub o contacta a los mantenedores del proyecto.</p>
+                </div>
+        </section>
+
+    </div>
+
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</body>
+</html>
