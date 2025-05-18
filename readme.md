@@ -62,7 +62,6 @@ Repo_Root/
     ```bash
     pip install -r requirements.txt
     ```
-    *(Note: You will need to create `requirements.txt` based on the libraries you use in your scripts, e.g., pandas, numpy, scikit-learn, etc.)*
 
 ## Usage
 
