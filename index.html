@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis de Violencia Selectiva e Indiscriminada en Colombia</title>
+    <title>Analysis of Selective and Indiscriminate Violence in Colombia</title>
     <style>
         body {
             font-family: sans-serif;
@@ -100,15 +100,74 @@
             margin-bottom: 30px;
         }
 
-        /* Removed video styles */
-        /* Removed figure item styles */
+        /* --- Styles for Videos --- */
+        .videos-results-container {
+            display: flex; /* Use Flexbox */
+            justify-content: space-around; /* Space out the items */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 20px; /* Add space between video items */
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .video-item {
+            flex-basis: 48%; /* Each item takes roughly half the width */
+            max-width: 48%; /* Max width to maintain two columns */
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .video-item video {
+            width: 100%; /* Make video fill its container */
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .video-item p {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        /* Responsive adjustment: stack videos on small screens */
+        @media (max-width: 768px) {
+            .video-item {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+        /* --- End of Styles for Videos --- */
+
+        /* --- Styles for Additional Figures in Results --- */
+        .figure-item {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .figure-item img {
+            max-width: 80%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .figure-caption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: justify;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px;
+        }
+        /* --- End of Styles for Additional Figures --- */
 
     </style>
 </head>
 <body>
 
     <div class="top-bar">
-        <h1>Análisis de Violencia Selectiva e Indiscriminada en Colombia</h1>
+        <h1>Analysis of Selective and Indiscriminate Violence in Colombia</h1>
     </div>
 
     <div class="container">
@@ -121,99 +180,383 @@
 
         <div class="repo-link-container">
             <a href="https://github.com/dieahernandezcas/VS_VI_Source_Code" target="_blank" class="repo-link">
-                Ver Repositorio en GitHub
+                View Repository on GitHub
             </a>
         </div>
 
         <div class="justify-text">
-            <p>Este proyecto se enfoca en el análisis cuantitativo de la Violencia Selectiva (VS) y la Violencia Indiscriminada (VI) en Colombia. Utilizando datos detallados sobre eventos violentos (Casos) y personas afectadas (Víctimas), buscamos comprender las dinámicas de la violencia a nivel nacional, departamental y regional.</p>
-            <p>El análisis incluye la limpieza y procesamiento de datos, y la determinación de métricas clave como la **Escalada** (comparación con el mes anterior) y la **Intensidad** (comparación con el promedio ponderado de los últimos 3 años) para Casos y Víctimas.</p>
+            <p>This project focuses on the quantitative analysis of Selective Violence (VS) and Indiscriminate Violence (VI) in Colombia. Using detailed data on violent events (Cases) and affected persons (Victims), we aim to understand the dynamics of violence at the national, departmental, and regional levels.</p>
+            <p>The analysis includes data cleaning and processing, and the determination of key metrics such as **Escalation** (comparison with the previous month) and **Intensity** (comparison with the weighted average of the last 3 years) for both Cases and Victims.</p>
         </div>
 
         <section id="about-the-project">
-            <h2>Sobre el Proyecto</h2>
+            <h2>About the Project</h2>
             <div class="justify-text">
-                <p>Este repositorio contiene el código fuente y los scripts utilizados para el análisis de la Violencia Selectiva (VS) y la Violencia Indiscriminada (VI) en Colombia. El objetivo es proporcionar herramientas para el procesamiento de datos y el cálculo de métricas que permitan monitorear y entender la evolución de estos tipos de violencia en diferentes niveles geográficos del país.</p>
+                <p>This repository contains the source code and scripts used for the analysis of Selective Violence (VS) and Indiscriminate Violence (VI) in Colombia. The objective is to provide tools for data processing and metric calculation that allow for monitoring and understanding the evolution of these types of violence across different geographical levels of the country.</p>
             </div>
 
             <div class="videos-results-container">
                 <div class="video-item">
                     <video controls autoplay loop muted playsinline>
                         <source src="Images/VI_VS_Colombia_Cases.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
+                        Your browser does not support the video element.
                     </video>
-                    <p>Count of cases in Colombia 1958-2022</p>
+                    <p>Count of Cases in Colombia (1958-2022)</p>
                 </div>
                 <div class="video-item">
                     <video controls autoplay loop muted playsinline>
                         <source src="Images/VI_VS_Colombia_Victims.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
+                        Your browser does not support the video element.
                     </video>
-                    <p>Count of victims in Colombia 1958-2022</p>
+                    <p>Count of Victims in Colombia (1958-2022)</p>
                 </div>
             </div>
 
         </section>
 
         <section id="project-structure">
-            <h2>Estructura del Proyecto</h2>
-            <p>El repositorio está organizado en las siguientes carpetas:</p>
+            <h2>Project Structure</h2>
+            <p>The repository is organized into the following folders:</p>
             <pre><code>.
-├── data/               # Archivos de datos
-│   ├── raw/            # Datos originales (NO MODIFICAR)
-│   └── processed/      # Datos limpios y preprocesados
-├── notebooks/          # Notebooks Jupyter para exploración y análisis
-├── scripts/            # Scripts reutilizables de Python
-│   ├── preprocessing/  # Scripts para limpieza y transformación inicial de datos
-│   ├── data_generation/ # Scripts para preparar datos para modelado (si aplica)
-│   └── modeling/       # Scripts para modelado (si aplica)
-│   └── utils/          # (Opcional) Funciones de ayuda
-├── results/            # Resultados de análisis y modelos
-├── images/             # Visualizaciones e imágenes
-├── .gitignore          # Archivos ignorados por Git
-└── README.md           # Descripción del proyecto
+├── data/               # Data files
+│   ├── raw/            # Original raw data (DO NOT MODIFY)
+│   └── processed/      # Cleaned and processed data
+├── notebooks/          # Jupyter notebooks for exploration and analysis
+├── scripts/            # Reusable Python scripts
+│   ├── preprocessing/  # Scripts for initial data cleaning and transformation
+│   ├── data_generation/ # Scripts for preparing data for modeling (if applicable)
+│   └── modeling/       # Scripts for modeling (if applicable)
+│   └── utils/          # (Optional) Helper functions
+├── results/            # Analysis and model results
+├── images/             # Visualizations and images
+├── .gitignore          # Files ignored by Git
+└── README.md           # Project description
 </code></pre>
-            <p class="justify-text">Para una descripción más detallada de cada carpeta y su contenido, consulta el archivo README.md en la raíz del repositorio.</p>
+            <p class="justify-text">For a more detailed description of each folder and its contents, please refer to the README.md file at the repository root.</p>
         </section>
 
         <section id="installation">
-            <h2>Instalación</h2>
-            <p class="justify-text">Para configurar el proyecto localmente, asegúrate de tener Python 3.7+, pip y git instalados. Luego, clona el repositorio, crea un entorno virtual e instala las dependencias listadas en <code>requirements.txt</code>.</p>
-            <p class="justify-text">Consulta la sección de instalación en el README.md para instrucciones detalladas paso a paso.</p>
+            <h2>Installation</h2>
+            <p class="justify-text">To set up the project locally, ensure you have Python 3.7+, pip, and git installed. Then, clone the repository, create a virtual environment, and install the dependencies listed in <code>requirements.txt</code>.</p>
+            <p class="justify-text">Consult the installation section in the README.md for detailed step-by-step instructions.</p>
         </section>
 
         <section id="metrics">
-            <h2>Métricas Clave</h2>
+            <h2>Key Metrics</h2>
             <div class="justify-text">
-                <p>El proyecto calcula las siguientes métricas para Casos y Víctimas a nivel País, Departamento y Región:</p>
+                <p>The project calculates the following metrics for Cases and Victims at the Country, Department, and Region levels:</p>
                 <ul>
-                    <li>**Escalada:** Cambio en el número de Casos o Víctimas respecto al mes inmediatamente anterior.</li>
-                    <li>**Intensidad:** Comparación del número actual de Casos o Víctimas con el promedio ponderado de los últimos 3 años.</li>
+                    <li>**Escalation:** Change in the number of Cases or Victims compared to the immediately preceding month.</li>
+                    <li>**Intensity:** Comparison of the current number of Cases or Victims with the weighted average over the last 3 years.</li>
                 </ul>
-                <p>Las fórmulas exactas se detallan en el README.md.</p>
+                <p>Exact formulas are detailed in the README.md.</p>
             </div>
         </section>
 
 
         <section id="results">
-            <h2>Resultados</h2>
+            <h2>Results</h2>
             <div class="justify-text">
-                <p>Los resultados del procesamiento de datos y el cálculo de métricas se almacenan en la carpeta <code>results/</code>. Estos incluyen tablas resumen y, potencialmente, visualizaciones generadas por los scripts o notebooks.</p>
-                </div>
+                <p>Results from data processing and metric calculation are stored in the <code>results/</code> folder. These include summary tables and potentially visualizations generated by the scripts or notebooks.</p>
+            </div>
         </section>
 
         <section id="references">
-            <h2>Referencias</h2>
+            <h2>References</h2>
             <ul>
-                <li>**Repositorio GitHub:** <a href="https://github.com/dieahernandezcas/VS_VI_Source_Code" target="_blank">VS_VI_Source_Code</a>.</li>
+                <li>**GitHub Repository:** <a href="https://github.com/dieahernandezcas/VS_VI_Source_Code" target="_blank">VS_VI_Source_Code</a>.</li>
                 </ul>
         </section>
 
         <section id="contact">
-            <h2>Contacto</h2>
+            <h2>Contact</h2>
             <div class="justify-text">
-                <p>Para preguntas o colaboraciones, por favor abre un "Issue" en el repositorio de GitHub o contacta a los mantenedores del proyecto.</p>
+                <p>For questions or collaborations, please open an "Issue" on the GitHub repository or contact the project maintainers.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis of Selective and Indiscriminate Violence in Colombia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .top-bar {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+        }
+        .top-bar h1 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        /* Removed .image-container style */
+        .badges {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .badges img {
+            margin: 0 5px;
+        }
+        .repo-link-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .repo-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .repo-link:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        .justify-text {
+            text-align: justify;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #eee;
+        }
+        code {
+            font-family: monospace;
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .table-of-contents {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .table-of-contents ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .table-of-contents li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .table-of-contents li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* --- Styles for Videos --- */
+        .videos-results-container {
+            display: flex; /* Use Flexbox */
+            justify-content: space-around; /* Space out the items */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 20px; /* Add space between video items */
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .video-item {
+            flex-basis: 48%; /* Each item takes roughly half the width */
+            max-width: 48%; /* Max width to maintain two columns */
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .video-item video {
+            width: 100%; /* Make video fill its container */
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .video-item p {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        /* Responsive adjustment: stack videos on small screens */
+        @media (max-width: 768px) {
+            .video-item {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+        /* --- End of Styles for Videos --- */
+
+        /* --- Styles for Additional Figures in Results --- */
+        .figure-item {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .figure-item img {
+            max-width: 80%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .figure-caption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: justify;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px;
+        }
+        /* --- End of Styles for Additional Figures --- */
+
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <h1>Analysis of Selective and Indiscriminate Violence in Colombia</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="badges">
+            <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status Badge">
+            <img src="https://img.shields.io/badge/License-MIT-blue" alt="License Badge">
+            <img src="https://img.shields.io/badge/Version-1.0.0-informational" alt="Version Badge">
+        </div>
+
+        <div class="repo-link-container">
+            <a href="https://github.com/dieahernandezcas/VS_VI_Source_Code" target="_blank" class="repo-link">
+                View Repository on GitHub
+            </a>
+        </div>
+
+        <div class="justify-text">
+            <p>This project focuses on the quantitative analysis of Selective Violence (VS) and Indiscriminate Violence (VI) in Colombia. Using detailed data on violent events (Cases) and affected persons (Victims), we aim to understand the dynamics of violence at the national, departmental, and regional levels.</p>
+            <p>The analysis includes data cleaning and processing, and the determination of key metrics such as **Escalation** (comparison with the previous month) and **Intensity** (comparison with the weighted average of the last 3 years) for both Cases and Victims.</p>
+        </div>
+
+        <section id="about-the-project">
+            <h2>About the Project</h2>
+            <div class="justify-text">
+                <p>This repository contains the source code and scripts used for the analysis of Selective Violence (VS) and Indiscriminate Violence (VI) in Colombia. The objective is to provide tools for data processing and metric calculation that allow for monitoring and understanding the evolution of these types of violence across different geographical levels of the country.</p>
+            </div>
+
+            <div class="videos-results-container">
+                <div class="video-item">
+                    <video controls autoplay loop muted playsinline>
+                        <source src="Images/VI_VS_Colombia_Cases.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <p>Count of Cases in Colombia (1958-2022)</p>
                 </div>
+                <div class="video-item">
+                    <video controls autoplay loop muted playsinline>
+                        <source src="Images/VI_VS_Colombia_Victims.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <p>Count of Victims in Colombia (1958-2022)</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="project-structure">
+            <h2>Project Structure</h2>
+            <p>The repository is organized into the following folders:</p>
+            <pre><code>.
+├── data/               # Data files
+│   ├── raw/            # Original raw data (DO NOT MODIFY)
+│   └── processed/      # Cleaned and processed data
+├── notebooks/          # Jupyter notebooks for exploration and analysis
+├── scripts/            # Reusable Python scripts
+│   ├── preprocessing/  # Scripts for initial data cleaning and transformation
+│   ├── data_generation/ # Scripts for preparing data for modeling (if applicable)
+│   └── modeling/       # Scripts for modeling (if applicable)
+│   └── utils/          # (Optional) Helper functions
+├── results/            # Analysis and model results
+├── images/             # Visualizations and images
+├── .gitignore          # Files ignored by Git
+└── README.md           # Project description
+</code></pre>
+            <p class="justify-text">For a more detailed description of each folder and its contents, please refer to the README.md file at the repository root.</p>
+        </section>
+
+        <section id="installation">
+            <h2>Installation</h2>
+            <p class="justify-text">To set up the project locally, ensure you have Python 3.7+, pip, and git installed. Then, clone the repository, create a virtual environment, and install the dependencies listed in <code>requirements.txt</code>.</p>
+            <p class="justify-text">Consult the installation section in the README.md for detailed step-by-step instructions.</p>
+        </section>
+
+        <section id="metrics">
+            <h2>Key Metrics</h2>
+            <div class="justify-text">
+                <p>The project calculates the following metrics for Cases and Victims at the Country, Department, and Region levels:</p>
+                <ul>
+                    <li>**Escalation:** Change in the number of Cases or Victims compared to the immediately preceding month.</li>
+                    <li>**Intensity:** Comparison of the current number of Cases or Victims with the weighted average over the last 3 years.</li>
+                </ul>
+                <p>Exact formulas are detailed in the README.md.</p>
+            </div>
+        </section>
+
+
+        <section id="results">
+            <h2>Results</h2>
+            <div class="justify-text">
+                <p>Results from data processing and metric calculation are stored in the <code>results/</code> folder. These include summary tables and potentially visualizations generated by the scripts or notebooks.</p>
+            </div>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li>**GitHub Repository:** <a href="https://github.com/dieahernandezcas/VS_VI_Source_Code" target="_blank">VS_VI_Source_Code</a>.</li>
+                </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="justify-text">
+                <p>For questions or collaborations, please open an "Issue" on the GitHub repository or contact the project maintainers.</p>
+            </div>
         </section>
 
     </div>
