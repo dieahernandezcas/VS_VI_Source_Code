@@ -44,10 +44,9 @@ Repo_Root/
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/VS_VI_Source_Code.git](https://github.com/YOUR_USERNAME/VS_VI_Source_Code.git)
+    git clone [https://github.com/dieahernandezcas/VS_VI_Source_Code.git](https://github.com/dieahernandezcas/VS_VI_Source_Code.git)
     cd VS_VI_Source_Code
     ```
-    *(Replace `YOUR_USERNAME` with your GitHub username or organization)*
 
 2.  **Create a virtual environment (recommended):**
     ```bash
