@@ -37,7 +37,35 @@
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
         }
-        /* Removed .image-container style */
+        /* Style for the main image container */
+        .image-container {
+            background-color: white;
+            display: block;
+            padding: 10px;
+            text-align: center; /* Center inline/inline-block elements */
+            margin: 20px auto; /* Center the block container itself */
+            max-width: 900px; /* Match container width for alignment */
+            border-radius: 8px; /* Match container border-radius */
+            box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Match container shadow */
+        }
+        .image-container img {
+            max-width: 100%; /* Ensure image is responsive */
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            /* These styles are for centering block images if max-width is less than 100% */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         .image-caption { /* Style for the text below the image */
+            font-size: 0.9em;
+            color: #555;
+            text-align: justify;
+            margin-top: 15px; /* Space above the text */
+            padding: 0 15px; /* Add some padding inside the container */
+        }
+
         .badges {
             text-align: center;
             margin-bottom: 15px;
@@ -171,7 +199,14 @@
     </div>
 
     <div class="image-container">
-          <img src="Images/pipeline.png" alt="Figura 1" width="800"/>
+          <img src="Images/pipeline.png" alt="Figure 1: Project Pipeline" width="800"/>
+          <div class="image-caption">
+              <p>Figure 1 illustrates the experimental design developed to explore hypotheses regarding armed conflict in Colombia, utilizing official data spanning from 1958 to 2021.</p>
+              <p>Data concerning collective violence (both cases and victims) are structured into monthly time series. This is done for each distinct dimension of violence: Selective Violence (VS), Indiscriminate Violence (VI), and Collective Violence (VC), which is the sum of VS and VI. This process yields a total of six time series (Cases VS, Cases VI, Victims VS, Victims VI, Cases VC, and Victims VC).</p>
+              <p>Each of these six time series undergoes normalization to represent temporal dynamics. Escalation is defined with values +1, 0, or -1, indicating whether the case/victim count in month $t$ is greater than, equal to, or less than the count in month $t-1$, respectively. Intensity is also defined with values +1, 0, or -1, indicating whether the count in month $t$ is greater than, equal to, or less than the average ($\mu$) count over the preceding three years (36 months).</p>
+              <p>For forecasting future violence dynamics, three distinct models employing different sliding windows are proposed. These models aim to determine the highest probability of the state (+1, 0, or -1 for Escalation and Intensity) occurring in month $t+1$. This prediction is based on the observed combination of Escalation and Intensity states in month $t-1$. Specifically, the models estimate the probability of a state at $t+1$ by comparing the state at $t-1$ to similar states observed at various points ($t_n$) within a historical reference period.</p>
+              <p>The forecasting performance for Escalation and Intensity will be evaluated both separately and in a scenario that combines the two metrics. The results produced by the three proposed probability models will be compared against the performance of a baseline weighted moving average model, also utilizing an n-sized sliding window. Model evaluation will primarily use the weighted F1 score metric, contrasting the performance with a traditional weighted moving average approach as described by Perry (2010).</p>
+          </div>
     </div>
 
     <div class="container">
