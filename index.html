@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Analysis of Selective and Indiscriminate Violence in Colombia</title>
-
   <style>
     body {
       font-family: sans-serif;
@@ -26,7 +24,6 @@
     .top-bar h1 {
       margin: 0;
       font-size: 2em;
-      color: white;
     }
 
     .container {
@@ -71,7 +68,6 @@
 
     .repo-link:hover {
       background-color: #0056b3;
-      color: white;
     }
 
     .justify-text {
@@ -155,8 +151,6 @@
       }
     }
 
-    /* --- End of Styles for Videos --- */
-
     /* --- Styles for Additional Figures in Results --- */
     .figure-item {
       margin-top: 25px;
@@ -188,21 +182,15 @@
 </head>
 
 <body>
-
   <div class="top-bar">
     <h1>Analysis of Selective and Indiscriminate Violence in Colombia</h1>
   </div>
 
-  <div class="image-container">
-    <img src="Images/pipeline.png" alt="Figura 1" width="800" />
-  </div>
-
   <div class="container">
-
     <div class="badges">
-      <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status Badge">
-      <img src="https://img.shields.io/badge/License-MIT-blue" alt="License Badge">
-      <img src="https://img.shields.io/badge/Version-1.0.0-informational" alt="Version Badge">
+      <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status Badge" />
+      <img src="https://img.shields.io/badge/License-MIT-blue" alt="License Badge" />
+      <img src="https://img.shields.io/badge/Version-1.0.0-informational" alt="Version Badge" />
     </div>
 
     <div class="repo-link-container">
@@ -213,7 +201,6 @@
 
     <div class="justify-text">
       <p>This project focuses on the quantitative analysis of Selective Violence (VS) and Indiscriminate Violence (VI) in Colombia. Using detailed data on violent events (Cases) and affected persons (Victims), we aim to understand the dynamics of violence at the national, departmental, and regional levels.</p>
-
       <p>The analysis includes data cleaning and processing, and the determination of key metrics such as <strong>Escalation</strong> (comparison with the previous month) and <strong>Intensity</strong> (comparison with the weighted average of the last 3 years) for both Cases and Victims.</p>
     </div>
 
@@ -226,7 +213,7 @@
       <div class="videos-results-container">
         <div class="video-item">
           <video controls autoplay loop muted playsinline>
-            <source src="Images/VI_VS_Colombia_Cases.mp4" type="video/mp4">
+            <source src="Images/VI_VS_Colombia_Cases.mp4" type="video/mp4" />
             Your browser does not support the video element.
           </video>
           <p>Count of Cases in Colombia (1958–2022)</p>
@@ -234,7 +221,7 @@
 
         <div class="video-item">
           <video controls autoplay loop muted playsinline>
-            <source src="Images/VI_VS_Colombia_Victims.mp4" type="video/mp4">
+            <source src="Images/VI_VS_Colombia_Victims.mp4" type="video/mp4" />
             Your browser does not support the video element.
           </video>
           <p>Count of Victims in Colombia (1958–2022)</p>
@@ -246,19 +233,19 @@
       <h2>Project Structure</h2>
       <p>The repository is organized into the following folders:</p>
       <pre><code>.
-├── data/                 # Data files
-│   ├── raw/             # Original raw data (DO NOT MODIFY)
-│   └── processed/       # Cleaned and processed data
-├── notebooks/           # Jupyter notebooks for exploration and analysis
-├── scripts/             # Reusable Python scripts
-│   ├── preprocessing/   # Scripts for initial data cleaning and transformation
-│   ├── data_generation/ # Scripts for preparing data for modeling (if applicable)
-│   ├── modeling/        # Scripts for modeling (if applicable)
-│   └── utils/           # (Optional) Helper functions
-├── results/             # Analysis and model results
-├── images/              # Visualizations and images
-├── .gitignore           # Files ignored by Git
-└── README.md            # Project description
+├── data/                  # Data files
+│   ├── raw/              # Original raw data (DO NOT MODIFY)
+│   └── processed/        # Cleaned and processed data
+├── notebooks/            # Jupyter notebooks for exploration and analysis
+├── scripts/              # Reusable Python scripts
+│   ├── preprocessing/    # Scripts for initial data cleaning and transformation
+│   ├── data_generation/  # Scripts for preparing data for modeling (if applicable)
+│   └── modeling/         # Scripts for modeling (if applicable)
+│   └── utils/            # (Optional) Helper functions
+├── results/              # Analysis and model results
+├── images/               # Visualizations and images
+├── .gitignore            # Files ignored by Git
+└── README.md             # Project description
 </code></pre>
       <p class="justify-text">For a more detailed description of each folder and its contents, please refer to the README.md file at the repository root.</p>
     </section>
@@ -301,13 +288,13 @@
         <p>For questions or collaborations, please open an "Issue" on the GitHub repository or contact the project maintainers.</p>
       </div>
     </section>
-
   </div>
 
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
 </body>
-
 </html>
