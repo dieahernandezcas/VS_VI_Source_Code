@@ -37,33 +37,32 @@
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
         }
-        /* Style for the main image container */
-        .image-container {
-            background-color: white;
-            display: block;
-            padding: 10px;
-            text-align: center; /* Center inline/inline-block elements */
+        /* Style for the main image and caption container */
+        .pipeline-section {
+            text-align: center; /* Center inline/inline-block children like the image */
             margin: 20px auto; /* Center the block container itself */
-            max-width: 900px; /* Match container width for alignment */
-            border-radius: 8px; /* Match container border-radius */
-            box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Match container shadow */
+            max-width: 900px; /* Optional: constrain the width of this section */
+            padding: 0 15px; /* Add some horizontal padding */
         }
-        .image-container img {
+        .pipeline-section img {
             max-width: 100%; /* Ensure image is responsive */
             height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
-            /* These styles are for centering block images if max-width is less than 100% */
+            /* These styles help center the image itself if it's a block element */
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-         .image-caption { /* Style for the text below the image */
+         .pipeline-caption { /* Style for the text below the image */
             font-size: 0.9em;
             color: #555;
-            text-align: justify;
+            text-align: justify; /* Justify the text */
             margin-top: 15px; /* Space above the text */
-            padding: 0 15px; /* Add some padding inside the container */
+            max-width: 800px; /* Optional: constrain text width */
+            margin-left: auto; /* Center the text block */
+            margin-right: auto;
+            /* Removed padding here as it's in .pipeline-section */
         }
 
         .badges {
@@ -198,9 +197,9 @@
         <h1>Analysis of Selective and Indiscriminate Violence in Colombia</h1>
     </div>
 
-    <div class="image-container">
+    <div class="pipeline-section">
           <img src="Images/pipeline.png" alt="Figure 1: Project Pipeline" width="800"/>
-          <div class="image-caption">
+          <div class="pipeline-caption">
               <p>Figure 1 illustrates the experimental design developed to explore hypotheses regarding armed conflict in Colombia, utilizing official data spanning from 1958 to 2021.</p>
               <p>Data concerning collective violence (both cases and victims) are structured into monthly time series. This is done for each distinct dimension of violence: Selective Violence (VS), Indiscriminate Violence (VI), and Collective Violence (VC), which is the sum of VS and VI. This process yields a total of six time series (Cases VS, Cases VI, Victims VS, Victims VI, Cases VC, and Victims VC).</p>
               <p>Each of these six time series undergoes normalization to represent temporal dynamics. Escalation is defined with values +1, 0, or -1, indicating whether the case/victim count in month $t$ is greater than, equal to, or less than the count in month $t-1$, respectively. Intensity is also defined with values +1, 0, or -1, indicating whether the count in month $t$ is greater than, equal to, or less than the average ($\mu$) count over the preceding three years (36 months).</p>
@@ -257,20 +256,20 @@
             <h2>Project Structure</h2>
             <p>The repository is organized into the following folders:</p>
             <pre><code>.
-            ├── data/               # Data files
-            │   ├── raw/            # Original raw data (DO NOT MODIFY)
-            │   └── processed/      # Cleaned and processed data
-            ├── notebooks/          # Jupyter notebooks for exploration and analysis
-            ├── scripts/            # Reusable Python scripts
-            │   ├── preprocessing/  # Scripts for initial data cleaning and transformation
-            │   ├── data_generation/ # Scripts for preparing data for modeling (if applicable)
-            │   └── modeling/       # Scripts for modeling (if applicable)
-            │   └── utils/          # (Optional) Helper functions
-            ├── results/            # Analysis and model results
-            ├── images/             # Visualizations and images
-            ├── .gitignore          # Files ignored by Git
-            └── README.md           # Project description
-            </code></pre>
+├── data/               # Data files
+│   ├── raw/            # Original raw data (DO NOT MODIFY)
+│   └── processed/      # Cleaned and processed data
+├── notebooks/          # Jupyter notebooks for exploration and analysis
+├── scripts/            # Reusable Python scripts
+│   ├── preprocessing/  # Scripts for initial data cleaning and transformation
+│   ├── data_generation/ # Scripts for preparing data for modeling (if applicable)
+│   └── modeling/       # Scripts for modeling (if applicable)
+│   └── utils/          # (Optional) Helper functions
+├── results/            # Analysis and model results
+├── images/             # Visualizations and images
+├── .gitignore          # Files ignored by Git
+└── README.md           # Project description
+</code></pre>
             <p class="justify-text">For a more detailed description of each folder and its contents, please refer to the README.md file at the repository root.</p>
         </section>
 
