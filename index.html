@@ -13,82 +13,42 @@
             background-color: #f4f4f4;
             color: #333;
         }
-
         .top-bar {
             background-color: #333;
             color: white;
             padding: 15px 30px;
             text-align: center;
         }
-
         .top-bar h1 {
             margin: 0;
             font-size: 2em;
             color: white;
         }
-
         .container {
             max-width: 900px;
             margin: 20px auto;
             background: white;
             padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
-
-        h2,
-        h3 {
+        h2, h3 {
             color: #333;
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
         }
-
-        /* Style for the main image and caption container */
-        /* This container will help center the image and its caption block */
-        .image-container {
-            text-align: center; /* Center inline/inline-block children like the image */
-            margin: 20px auto; /* Center the block container itself */
-            max-width: 900px; /* Optional: constrain the width of this section */
-            padding: 0 15px; /* Add some horizontal padding */
-        }
-
-        .image-container img {
-            max-width: 100%; /* Ensure image is responsive */
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            /* These styles help center the image itself if it's a block element */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-         .image-caption { /* Style for the text below the image */
-            font-size: 0.9em;
-            color: #555;
-            text-align: justify; /* Justify the text */
-            margin-top: 15px; /* Space above the text */
-            max-width: 800px; /* Optional: constrain text width */
-            margin-left: auto; /* Center the text block */
-            margin-right: auto;
-            /* Removed padding here as it's in .image-container */
-        }
-
-
+        /* Removed .image-container style */
         .badges {
             text-align: center;
             margin-bottom: 15px;
         }
-
         .badges img {
             margin: 0 5px;
         }
-
         .repo-link-container {
             text-align: center;
             margin-bottom: 25px;
         }
-
         .repo-link {
             display: inline-block;
             background-color: #007bff;
@@ -99,16 +59,13 @@
             font-weight: bold;
             transition: background-color 0.3s ease;
         }
-
         .repo-link:hover {
             background-color: #0056b3;
             color: white;
         }
-
         .justify-text {
             text-align: justify;
         }
-
         pre {
             background-color: #f9f9f9;
             padding: 15px;
@@ -116,76 +73,59 @@
             overflow-x: auto;
             border: 1px solid #eee;
         }
-
         code {
             font-family: monospace;
             background-color: #eef;
             padding: 2px 4px;
             border-radius: 3px;
         }
-
         .table-of-contents {
             background: #f9f9f9;
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 20px;
         }
-
         .table-of-contents ul {
             list-style-type: none;
             padding-left: 0;
         }
-
         .table-of-contents li a {
             text-decoration: none;
             color: #007bff;
         }
-
         .table-of-contents li a:hover {
             text-decoration: underline;
         }
-
         section {
             margin-bottom: 30px;
         }
 
         /* --- Styles for Videos --- */
         .videos-results-container {
-            display: flex;
-            /* Use Flexbox */
-            justify-content: space-around;
-            /* Space out the items */
-            flex-wrap: wrap;
-            /* Allow wrapping on smaller screens */
-            gap: 20px;
-            /* Add space between video items */
+            display: flex; /* Use Flexbox */
+            justify-content: space-around; /* Space out the items */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 20px; /* Add space between video items */
             margin-top: 20px;
             margin-bottom: 30px;
         }
-
         .video-item {
-            flex-basis: 48%;
-            /* Each item takes roughly half the width */
-            max-width: 48%;
-            /* Max width to maintain two columns */
+            flex-basis: 48%; /* Each item takes roughly half the width */
+            max-width: 48%; /* Max width to maintain two columns */
             box-sizing: border-box;
             text-align: center;
         }
-
         .video-item video {
-            width: 100%;
-            /* Make video fill its container */
+            width: 100%; /* Make video fill its container */
             height: auto;
             border-radius: 4px;
             border: 1px solid #ddd;
         }
-
         .video-item p {
             margin-top: 8px;
             font-size: 0.9em;
             color: #555;
         }
-
         /* Responsive adjustment: stack videos on small screens */
         @media (max-width: 768px) {
             .video-item {
@@ -193,7 +133,6 @@
                 max-width: 100%;
             }
         }
-
         /* --- End of Styles for Videos --- */
 
         /* --- Styles for Additional Figures in Results --- */
@@ -202,7 +141,6 @@
             margin-bottom: 25px;
             text-align: center;
         }
-
         .figure-item img {
             max-width: 80%;
             height: auto;
@@ -213,7 +151,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         .figure-caption {
             font-size: 0.9em;
             color: #555;
@@ -223,8 +160,8 @@
             margin-right: auto;
             padding: 0 15px;
         }
-
         /* --- End of Styles for Additional Figures --- */
+
     </style>
 </head>
 <body>
@@ -234,12 +171,8 @@
     </div>
 
     <div class="image-container">
-          <img src="Images/pipeline.png" alt="Figure 1: Project Pipeline" width="800"/>
-          <div class="image-caption">
-              <p>Figure 1 illustrates the experimental design developed to explore hypotheses regarding armed conflict in Colombia, utilizing official data spanning from 1958 to 2021.</p>
-          </div>
+          <img src="Images/pipeline.png" alt="Figura 1" width="800"/>
     </div>
-
 
     <div class="container">
 
@@ -336,7 +269,7 @@
             <h2>References</h2>
             <ul>
                 <li>**GitHub Repository:** <a href="https://github.com/dieahernandezcas/VS_VI_Source_Code" target="_blank">VS_VI_Source_Code</a>.</li>
-            </ul>
+                </ul>
         </section>
 
         <section id="contact">
@@ -348,7 +281,8 @@
 
     </div>
 
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
 </body>
 </html>
