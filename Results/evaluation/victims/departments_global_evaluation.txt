@@ -1,0 +1,219 @@
+
+----- Violence Type: VC (Aggregated Departments) -----
+
+--- Evaluation for Previous State (VC) ---
+
+Confusion Matrix for Previous State (VC):
+[[ 62493     43   2694    277  16733     86   6400  52144  43790      0]
+ [  4457      2    117     13   1329      4    494   4538   3431      0]
+ [ 24864     13   1226     62   4008     22   1602  12796  12212      0]
+ [   226      0      3    647   2861    370     37    224    252      0]
+ [ 13754      2    263   3427  34896   1654   1314  50357  12493      0]
+ [    96      0      3    627   2671    342      4    124     53      0]
+ [ 18812     12    829    122   5209     47   6224  17427  32553      0]
+ [ 40958     30    930    902  44929    318   6130 119252  45586      0]
+ [ 56695     38   2300    293  17809     97  11815  56423  65160      0]
+ [     0      0      0      0      0      0      0      0      0      0]]
+
+Classification Report for Previous State (VC):
+              precision    recall  f1-score   support
+
+           A       0.28      0.34      0.31    184660
+           B       0.01      0.00      0.00     14385
+           C       0.15      0.02      0.04     56805
+           D       0.10      0.14      0.12      4620
+           E       0.27      0.30      0.28    118160
+           F       0.12      0.09      0.10      3920
+           G       0.18      0.08      0.11     81235
+           H       0.38      0.46      0.42    259035
+           I       0.30      0.31      0.31    210630
+       Start       0.00      0.00      0.00         0
+
+   micro avg       0.31      0.31      0.31    933450
+   macro avg       0.18      0.17      0.17    933450
+weighted avg       0.29      0.31      0.29    933450
+
+
+--- Evaluation for Intensity (VC) ---
+
+Confusion Matrix for Intensity (VC):
+[[389511  70416  91778]
+ [ 69041  46577   9997]
+ [157938  22762  75430]]
+
+Classification Report for Intensity (VC):
+              precision    recall  f1-score   support
+
+          -1       0.63      0.71      0.67    551705
+           0       0.33      0.37      0.35    125615
+           1       0.43      0.29      0.35    256130
+
+    accuracy                           0.55    933450
+   macro avg       0.46      0.46      0.46    933450
+weighted avg       0.54      0.55      0.54    933450
+
+
+--- Evaluation for Escalation (VC) ---
+
+Confusion Matrix for Escalation (VC):
+[[100493  95161  75806]
+ [ 76328 255762  59315]
+ [100519  95852  74214]]
+
+Classification Report for Escalation (VC):
+              precision    recall  f1-score   support
+
+          -1       0.36      0.37      0.37    271460
+           0       0.57      0.65      0.61    391405
+           1       0.35      0.27      0.31    270585
+
+    accuracy                           0.46    933450
+   macro avg       0.43      0.43      0.43    933450
+weighted avg       0.45      0.46      0.45    933450
+
+
+----- Violence Type: VI (Aggregated Departments) -----
+
+--- Evaluation for Previous State (VI) ---
+
+Confusion Matrix for Previous State (VI):
+[[ 20743      0     31     63  20045     11   2169  54306  25937      0]
+ [   946      0      0      2   1016      1     87   2585   1208      0]
+ [  4708      0      4      2   3120      0    375   9521   4845      0]
+ [    76      0      0     77   1686     31     23    155    157      0]
+ [ 11420      0      8   1234  88054    570   1304 102101  13779      0]
+ [    69      0      0     89   1750     35      7    190     65      0]
+ [  7885      0      8      5   4940      3   1278  19363  14048      0]
+ [ 33230      0     32    266  89406     70   4522 186032  49707      0]
+ [ 24488      0     22     47  21543     14   3150  64052  34734      0]
+ [     0      0      0      0      0      0      0      0      0      0]]
+
+Classification Report for Previous State (VI):
+              precision    recall  f1-score   support
+
+           A       0.20      0.17      0.18    123305
+           B       0.00      0.00      0.00      5845
+           C       0.04      0.00      0.00     22575
+           D       0.04      0.03      0.04      2205
+           E       0.38      0.40      0.39    218470
+           F       0.05      0.02      0.02      2205
+           G       0.10      0.03      0.04     47530
+           H       0.42      0.51      0.46    363265
+           I       0.24      0.23      0.24    148050
+       Start       0.00      0.00      0.00         0
+
+   micro avg       0.35      0.35      0.35    933450
+   macro avg       0.15      0.14      0.14    933450
+weighted avg       0.32      0.35      0.34    933450
+
+
+--- Evaluation for Intensity (VI) ---
+
+Confusion Matrix for Intensity (VI):
+[[403114 116933  39533]
+ [122845  92724   6471]
+ [112161  24423  15246]]
+
+Classification Report for Intensity (VI):
+              precision    recall  f1-score   support
+
+          -1       0.63      0.72      0.67    559580
+           0       0.40      0.42      0.41    222040
+           1       0.25      0.10      0.14    151830
+
+    accuracy                           0.55    933450
+   macro avg       0.43      0.41      0.41    933450
+weighted avg       0.51      0.55      0.52    933450
+
+
+--- Evaluation for Escalation (VI) ---
+
+Confusion Matrix for Escalation (VI):
+[[ 33506 101835  37454]
+ [ 56823 471722  59035]
+ [ 33676 102258  37141]]
+
+Classification Report for Escalation (VI):
+              precision    recall  f1-score   support
+
+          -1       0.27      0.19      0.23    172795
+           0       0.70      0.80      0.75    587580
+           1       0.28      0.21      0.24    173075
+
+    accuracy                           0.58    933450
+   macro avg       0.42      0.40      0.40    933450
+weighted avg       0.54      0.58      0.56    933450
+
+
+----- Violence Type: VS (Aggregated Departments) -----
+
+--- Evaluation for Previous State (VS) ---
+
+Confusion Matrix for Previous State (VS):
+[[ 65417    340   2931    303  18225     41   5363  48695  37255      0]
+ [  6443     45    200     13   1752      3    514   5180   3560      0]
+ [ 26585     99   1386     60   4227     11   1221  12012  10189      0]
+ [   317      2      4    701   2892    241     63    255    285      0]
+ [ 15930    131    321   3873  48093   1124   1389  61935  11439      0]
+ [   163      0      4    617   2539    225     17    162    123      0]
+ [ 17066     93    907    115   4721     16   5823  14777  27917      0]
+ [ 43784    431   1114    977  55359    147   6142 116042  39134      0]
+ [ 55505    329   2408    306  18537     47  10688  50482  55668      0]
+ [     0      0      0      0      0      0      0      0      0      0]]
+
+Classification Report for Previous State (VS):
+              precision    recall  f1-score   support
+
+           A       0.28      0.37      0.32    178570
+           B       0.03      0.00      0.00     17710
+           C       0.15      0.02      0.04     55790
+           D       0.10      0.15      0.12      4760
+           E       0.31      0.33      0.32    144235
+           F       0.12      0.06      0.08      3850
+           G       0.19      0.08      0.11     71435
+           H       0.37      0.44      0.41    263130
+           I       0.30      0.29      0.29    193970
+       Start       0.00      0.00      0.00         0
+
+   micro avg       0.31      0.31      0.31    933450
+   macro avg       0.19      0.17      0.17    933450
+weighted avg       0.29      0.31      0.30    933450
+
+
+--- Evaluation for Intensity (VS) ---
+
+Confusion Matrix for Intensity (VS):
+[[358033  80906  90436]
+ [ 80698  59422  11605]
+ [146609  24837  80904]]
+
+Classification Report for Intensity (VS):
+              precision    recall  f1-score   support
+
+          -1       0.61      0.68      0.64    529375
+           0       0.36      0.39      0.38    151725
+           1       0.44      0.32      0.37    252350
+
+    accuracy                           0.53    933450
+   macro avg       0.47      0.46      0.46    933450
+weighted avg       0.52      0.53      0.53    933450
+
+
+--- Evaluation for Escalation (VS) ---
+
+Confusion Matrix for Escalation (VS):
+[[ 98195  90394  65196]
+ [ 80456 291016  53393]
+ [ 99109  91790  63901]]
+
+Classification Report for Escalation (VS):
+              precision    recall  f1-score   support
+
+          -1       0.35      0.39      0.37    253785
+           0       0.61      0.68      0.65    424865
+           1       0.35      0.25      0.29    254800
+
+    accuracy                           0.49    933450
+   macro avg       0.44      0.44      0.44    933450
+weighted avg       0.47      0.49      0.48    933450
+
