@@ -1,0 +1,124 @@
+
+--- Consolidated Evaluation for All Departments (Actor Type: state_actor) ---
+-------------------------------------------------------------------
+
+
+----- Violence Type: VC (Aggregated Department) -----
+
+--- Evaluation for Intensity (VC) - Aggregated Department ---
+
+Confusion Matrix for Intensity (VC) - Aggregated Department:
+[[338702 141788  24350]
+ [156123 155446   7456]
+ [ 75955  22386  11244]]
+
+Classification Report for Intensity (VC) - Aggregated Department:
+              precision    recall  f1-score   support
+
+          -1       0.59      0.67      0.63    504840
+           0       0.49      0.49      0.49    319025
+           1       0.26      0.10      0.15    109585
+
+    accuracy                           0.54    933450
+   macro avg       0.45      0.42      0.42    933450
+weighted avg       0.52      0.54      0.52    933450
+
+
+--- Evaluation for Escalation (VC) - Aggregated Department ---
+
+Confusion Matrix for Escalation (VC) - Aggregated Department:
+[[ 16280  66789   4956]
+ [ 74611 663102  18917]
+ [ 16734  67374   4687]]
+
+Classification Report for Escalation (VC) - Aggregated Department:
+              precision    recall  f1-score   support
+
+          -1       0.15      0.18      0.17     88025
+           0       0.83      0.88      0.85    756630
+           1       0.16      0.05      0.08     88795
+
+    accuracy                           0.73    933450
+   macro avg       0.38      0.37      0.37    933450
+weighted avg       0.70      0.73      0.72    933450
+
+
+----- Violence Type: VI (Aggregated Department) -----
+
+--- Evaluation for Intensity (VI) - Aggregated Department ---
+
+Confusion Matrix for Intensity (VI) - Aggregated Department:
+[[  4854  40819      2]
+ [ 42069 844204     32]
+ [   117   1352      1]]
+
+Classification Report for Intensity (VI) - Aggregated Department:
+              precision    recall  f1-score   support
+
+          -1       0.10      0.11      0.10     45675
+           0       0.95      0.95      0.95    886305
+           1       0.03      0.00      0.00      1470
+
+    accuracy                           0.91    933450
+   macro avg       0.36      0.35      0.35    933450
+weighted avg       0.91      0.91      0.91    933450
+
+
+--- Evaluation for Escalation (VI) - Aggregated Department ---
+
+Confusion Matrix for Escalation (VI) - Aggregated Department:
+[[     3   1466      1]
+ [  1494 928948     33]
+ [     8   1496      1]]
+
+Classification Report for Escalation (VI) - Aggregated Department:
+              precision    recall  f1-score   support
+
+          -1       0.00      0.00      0.00      1470
+           0       1.00      1.00      1.00    930475
+           1       0.03      0.00      0.00      1505
+
+    accuracy                           1.00    933450
+   macro avg       0.34      0.33      0.33    933450
+weighted avg       0.99      1.00      0.99    933450
+
+
+----- Violence Type: VS (Aggregated Department) -----
+
+--- Evaluation for Intensity (VS) - Aggregated Department ---
+
+Confusion Matrix for Intensity (VS) - Aggregated Department:
+[[335372 142083  24200]
+ [156464 159081   7470]
+ [ 75094  22551  11135]]
+
+Classification Report for Intensity (VS) - Aggregated Department:
+              precision    recall  f1-score   support
+
+          -1       0.59      0.67      0.63    501655
+           0       0.49      0.49      0.49    323015
+           1       0.26      0.10      0.15    108780
+
+    accuracy                           0.54    933450
+   macro avg       0.45      0.42      0.42    933450
+weighted avg       0.52      0.54      0.52    933450
+
+
+--- Evaluation for Escalation (VS) - Aggregated Department ---
+
+Confusion Matrix for Escalation (VS) - Aggregated Department:
+[[ 16185  66228   4877]
+ [ 74087 665534  18409]
+ [ 16548  66973   4609]]
+
+Classification Report for Escalation (VS) - Aggregated Department:
+              precision    recall  f1-score   support
+
+          -1       0.15      0.19      0.17     87290
+           0       0.83      0.88      0.86    758030
+           1       0.17      0.05      0.08     88130
+
+    accuracy                           0.74    933450
+   macro avg       0.38      0.37      0.37    933450
+weighted avg       0.71      0.74      0.72    933450
+

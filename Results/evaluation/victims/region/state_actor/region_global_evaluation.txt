@@ -1,0 +1,124 @@
+
+--- Consolidated Evaluation for All Regions (Actor Type: state_actor) ---
+-------------------------------------------------------------------
+
+
+----- Violence Type: VC (Aggregated Region) -----
+
+--- Evaluation for Intensity (VC) - Aggregated Region ---
+
+Confusion Matrix for Intensity (VC) - Aggregated Region:
+[[1086776  853930   38622]
+ [ 917795 1477589   19496]
+ [ 143159   85311   13330]]
+
+Classification Report for Intensity (VC) - Aggregated Region:
+              precision    recall  f1-score   support
+
+          -1       0.51      0.55      0.53   1979328
+           0       0.61      0.61      0.61   2414880
+           1       0.19      0.06      0.09    241800
+
+    accuracy                           0.56   4636008
+   macro avg       0.43      0.41      0.41   4636008
+weighted avg       0.54      0.56      0.55   4636008
+
+
+--- Evaluation for Escalation (VC) - Aggregated Region ---
+
+Confusion Matrix for Escalation (VC) - Aggregated Region:
+[[  22846  182810    7050]
+ [ 193205 3979517   36470]
+ [  23175  184067    6868]]
+
+Classification Report for Escalation (VC) - Aggregated Region:
+              precision    recall  f1-score   support
+
+          -1       0.10      0.11      0.10    212706
+           0       0.92      0.95      0.93   4209192
+           1       0.14      0.03      0.05    214110
+
+    accuracy                           0.86   4636008
+   macro avg       0.38      0.36      0.36   4636008
+weighted avg       0.84      0.86      0.85   4636008
+
+
+----- Violence Type: VI (Aggregated Region) -----
+
+--- Evaluation for Intensity (VI) - Aggregated Region ---
+
+Confusion Matrix for Intensity (VI) - Aggregated Region:
+[[   2711   68269       0]
+ [  70240 4492604       0]
+ [     57    2127       0]]
+
+Classification Report for Intensity (VI) - Aggregated Region:
+              precision    recall  f1-score   support
+
+          -1       0.04      0.04      0.04     70980
+           0       0.98      0.98      0.98   4562844
+           1       0.00      0.00      0.00      2184
+
+    accuracy                           0.97   4636008
+   macro avg       0.34      0.34      0.34   4636008
+weighted avg       0.97      0.97      0.97   4636008
+
+
+--- Evaluation for Escalation (VI) - Aggregated Region ---
+
+Confusion Matrix for Escalation (VI) - Aggregated Region:
+[[      2    2104       0]
+ [   2180 4629538       0]
+ [      2    2182       0]]
+
+Classification Report for Escalation (VI) - Aggregated Region:
+              precision    recall  f1-score   support
+
+          -1       0.00      0.00      0.00      2106
+           0       1.00      1.00      1.00   4631718
+           1       0.00      0.00      0.00      2184
+
+    accuracy                           1.00   4636008
+   macro avg       0.33      0.33      0.33   4636008
+weighted avg       1.00      1.00      1.00   4636008
+
+
+----- Violence Type: VS (Aggregated Region) -----
+
+--- Evaluation for Intensity (VS) - Aggregated Region ---
+
+Confusion Matrix for Intensity (VS) - Aggregated Region:
+[[1077735  851903   38458]
+ [ 915487 1492701   19562]
+ [ 141872   85096   13194]]
+
+Classification Report for Intensity (VS) - Aggregated Region:
+              precision    recall  f1-score   support
+
+          -1       0.50      0.55      0.53   1968096
+           0       0.61      0.61      0.61   2427750
+           1       0.19      0.05      0.08    240162
+
+    accuracy                           0.56   4636008
+   macro avg       0.43      0.41      0.41   4636008
+weighted avg       0.55      0.56      0.55   4636008
+
+
+--- Evaluation for Escalation (VS) - Aggregated Region ---
+
+Confusion Matrix for Escalation (VS) - Aggregated Region:
+[[  22695  181291    7004]
+ [ 191924 3983770   36696]
+ [  23047  182737    6844]]
+
+Classification Report for Escalation (VS) - Aggregated Region:
+              precision    recall  f1-score   support
+
+          -1       0.10      0.11      0.10    210990
+           0       0.92      0.95      0.93   4212390
+           1       0.14      0.03      0.05    212628
+
+    accuracy                           0.87   4636008
+   macro avg       0.38      0.36      0.36   4636008
+weighted avg       0.84      0.87      0.85   4636008
+

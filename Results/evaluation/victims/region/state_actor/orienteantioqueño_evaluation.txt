@@ -1,0 +1,122 @@
+Evaluation Report for Region: orienteantioqueño (Actor Type: state_actor)
+---------------------------------------------------------------------------
+
+----- Violence Type: VC -----
+
+--- Evaluation for Intensity (VC) ---
+
+Confusion Matrix for Intensity (VC):
+[[330   3  23]
+ [  7 314   1]
+ [ 61   3  20]]
+
+Classification Report for Intensity (VC):
+              precision    recall  f1-score   support
+
+          -1       0.83      0.93      0.88       356
+           0       0.98      0.98      0.98       322
+           1       0.45      0.24      0.31        84
+
+    accuracy                           0.87       762
+   macro avg       0.75      0.71      0.72       762
+weighted avg       0.85      0.87      0.86       762
+
+
+--- Evaluation for Escalation (VC) ---
+
+Confusion Matrix for Escalation (VC):
+[[ 17  34  24]
+ [ 38 559   3]
+ [ 37  36  14]]
+
+Classification Report for Escalation (VC):
+              precision    recall  f1-score   support
+
+          -1       0.18      0.23      0.20        75
+           0       0.89      0.93      0.91       600
+           1       0.34      0.16      0.22        87
+
+    accuracy                           0.77       762
+   macro avg       0.47      0.44      0.44       762
+weighted avg       0.76      0.77      0.76       762
+
+
+----- Violence Type: VI -----
+
+--- Evaluation for Intensity (VI) ---
+
+Confusion Matrix for Intensity (VI):
+[[ 34   1   0]
+ [  2 724   0]
+ [  0   1   0]]
+
+Classification Report for Intensity (VI):
+              precision    recall  f1-score   support
+
+          -1       0.94      0.97      0.96        35
+           0       1.00      1.00      1.00       726
+           1       0.00      0.00      0.00         1
+
+    accuracy                           0.99       762
+   macro avg       0.65      0.66      0.65       762
+weighted avg       0.99      0.99      0.99       762
+
+
+--- Evaluation for Escalation (VI) ---
+
+Confusion Matrix for Escalation (VI):
+[[  0   1   0]
+ [  1 759   0]
+ [  0   1   0]]
+
+Classification Report for Escalation (VI):
+              precision    recall  f1-score   support
+
+          -1       0.00      0.00      0.00         1
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       762
+   macro avg       0.33      0.33      0.33       762
+weighted avg       0.99      1.00      1.00       762
+
+
+----- Violence Type: VS -----
+
+--- Evaluation for Intensity (VS) ---
+
+Confusion Matrix for Intensity (VS):
+[[332   3  22]
+ [  7 314   1]
+ [ 60   3  20]]
+
+Classification Report for Intensity (VS):
+              precision    recall  f1-score   support
+
+          -1       0.83      0.93      0.88       357
+           0       0.98      0.98      0.98       322
+           1       0.47      0.24      0.32        83
+
+    accuracy                           0.87       762
+   macro avg       0.76      0.72      0.72       762
+weighted avg       0.86      0.87      0.86       762
+
+
+--- Evaluation for Escalation (VS) ---
+
+Confusion Matrix for Escalation (VS):
+[[ 17  34  23]
+ [ 38 561   3]
+ [ 36  36  14]]
+
+Classification Report for Escalation (VS):
+              precision    recall  f1-score   support
+
+          -1       0.19      0.23      0.21        74
+           0       0.89      0.93      0.91       602
+           1       0.35      0.16      0.22        86
+
+    accuracy                           0.78       762
+   macro avg       0.48      0.44      0.45       762
+weighted avg       0.76      0.78      0.76       762
+

@@ -1,0 +1,122 @@
+Evaluation Report for Department: huila (Actor Type: non_state_actor)
+---------------------------------------------------------------------------
+
+----- Violence Type: VC -----
+
+--- Evaluation for Intensity (VC) ---
+
+Confusion Matrix for Intensity (VC):
+[[383   2  75]
+ [  1  17   1]
+ [165   0 118]]
+
+Classification Report for Intensity (VC):
+              precision    recall  f1-score   support
+
+          -1       0.70      0.83      0.76       460
+           0       0.89      0.89      0.89        19
+           1       0.61      0.42      0.49       283
+
+    accuracy                           0.68       762
+   macro avg       0.73      0.71      0.72       762
+weighted avg       0.67      0.68      0.66       762
+
+
+--- Evaluation for Escalation (VC) ---
+
+Confusion Matrix for Escalation (VC):
+[[103  47 110]
+ [ 66 139  23]
+ [151  53  70]]
+
+Classification Report for Escalation (VC):
+              precision    recall  f1-score   support
+
+          -1       0.32      0.40      0.36       260
+           0       0.58      0.61      0.60       228
+           1       0.34      0.26      0.29       274
+
+    accuracy                           0.41       762
+   macro avg       0.42      0.42      0.41       762
+weighted avg       0.41      0.41      0.40       762
+
+
+----- Violence Type: VI -----
+
+--- Evaluation for Intensity (VI) ---
+
+Confusion Matrix for Intensity (VI):
+[[315   4  29]
+ [  6 289   0]
+ [ 79   3  37]]
+
+Classification Report for Intensity (VI):
+              precision    recall  f1-score   support
+
+          -1       0.79      0.91      0.84       348
+           0       0.98      0.98      0.98       295
+           1       0.56      0.31      0.40       119
+
+    accuracy                           0.84       762
+   macro avg       0.77      0.73      0.74       762
+weighted avg       0.83      0.84      0.83       762
+
+
+--- Evaluation for Escalation (VI) ---
+
+Confusion Matrix for Escalation (VI):
+[[ 38  33  26]
+ [ 43 528   7]
+ [ 37  39  11]]
+
+Classification Report for Escalation (VI):
+              precision    recall  f1-score   support
+
+          -1       0.32      0.39      0.35        97
+           0       0.88      0.91      0.90       578
+           1       0.25      0.13      0.17        87
+
+    accuracy                           0.76       762
+   macro avg       0.48      0.48      0.47       762
+weighted avg       0.74      0.76      0.74       762
+
+
+----- Violence Type: VS -----
+
+--- Evaluation for Intensity (VS) ---
+
+Confusion Matrix for Intensity (VS):
+[[391   2  77]
+ [  1  17   1]
+ [162   0 111]]
+
+Classification Report for Intensity (VS):
+              precision    recall  f1-score   support
+
+          -1       0.71      0.83      0.76       470
+           0       0.89      0.89      0.89        19
+           1       0.59      0.41      0.48       273
+
+    accuracy                           0.68       762
+   macro avg       0.73      0.71      0.71       762
+weighted avg       0.67      0.68      0.67       762
+
+
+--- Evaluation for Escalation (VS) ---
+
+Confusion Matrix for Escalation (VS):
+[[ 98  51 106]
+ [ 66 143  24]
+ [155  59  60]]
+
+Classification Report for Escalation (VS):
+              precision    recall  f1-score   support
+
+          -1       0.31      0.38      0.34       255
+           0       0.57      0.61      0.59       233
+           1       0.32      0.22      0.26       274
+
+    accuracy                           0.40       762
+   macro avg       0.40      0.41      0.40       762
+weighted avg       0.39      0.40      0.39       762
+
